@@ -6,20 +6,18 @@
 $primary-color: #bc8c95;
 
 @mixin gradient($color1, $color2) {
-    background: linear-gradient(to left, $color1, $color2);
+    background: linear-gradient(to right, $color1, $color2);
 }
-
 
 
 body {
     margin: 0;
     padding: 0;
+    @include gradient(rgb(200, 205, 202), rgb(39, 57, 40));
 }
 
 main {
     margin: 40px, auto;
-    padding: 20px;
-    @include gradient(rgb(118, 59, 103), rgb(84, 98, 85));
 }
 
 
@@ -71,33 +69,6 @@ h1 {
 
 }
 
-// .income-container h3,
-// .expense-container h3 {
-//     text-align: center;
-//     font-family: "Michroma", sans-serif;
-//     font-weight: 400;
-//     font-style: normal;
-// }
-
-// .income-container input,
-// .expense-container input {
-//     display: flex;
-//     width: 80%;
-//     padding: 10px;
-//     align-items: center;
-//     justify-content: center;
-// }
-
-// .income-container button,
-// .expense-container button {
-//     padding: 8px 12px;
-//     border-radius: 4px;
-//     cursor: pointer;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-// }
-
 .inex-group {
     display: flex;
     flex-direction: column;
@@ -123,12 +94,9 @@ h1 {
 
     h3 {
         text-decoration: underline;
+        background: $primary-color;
     }
 }
-
-// .summary-container h3 {
-//     text-decoration: underline;
-// }
 
 .entry {
     font-weight: normal;
@@ -144,13 +112,3 @@ h1 {
         color: red;
     }
 }
-
-// /* Green for income */
-// .entry.income {
-//     color: green;
-// }
-
-// /* Red for expense */
-// .entry.expense {
-//     color: red;
-// }

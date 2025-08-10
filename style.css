@@ -1,12 +1,11 @@
 body {
   margin: 0;
   padding: 0;
+  background: linear-gradient(to right, rgb(200, 205, 202), rgb(39, 57, 40));
 }
 
 main {
   margin: 40px, auto;
-  padding: 20px;
-  background: linear-gradient(to left, rgb(118, 59, 103), rgb(84, 98, 85));
 }
 
 .intro-container {
@@ -80,6 +79,7 @@ h1 {
 }
 .summary-container h3 {
   text-decoration: underline;
+  background: #bc8c95;
 }
 
 .entry {
