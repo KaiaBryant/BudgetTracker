@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="intro-container">
+            <h1>Budget Tracker</h1>
+            <p>Enter your monthly income and expenses in its respected feild. The tracker will display all entries, sum
+                of each income and expense, and remaining budget. </p>
+        </div>
+
+        <div class="income-expense-wrapper">
+            <!-- Income section -->
+            <section class="income-container">
+                <h3>Income</h3>
+                <div class="inex-group">
+                    <input class="income__description" id="income_des" type="text" placeholder="Description">
+                    <input class="income__amount" id="income_amount" type="text" placeholder="Amount">
+                    <button id="income_btn">Submit</button>
+                </div>
+            </section>
+
+            <!-- Expense section -->
+            <section class="expense-container">
+                <h3>Expense</h3>
+                <div class="inex-group">
+                    <input class="expense__description" id="expense_des" type="text" placeholder="Description">
+                    <input class="expense__amount" id="expense_amount" type="text" placeholder="Amount">
+                    <button id="expense_btn">Submit</button>
+                </div>
+            </section>
+        </div>
+
+        <!-- Summary (total income, expense, budget and list of all entries) -->
+        <div class="summary-container">
+            <h3>Summary</h3>
+            <div id="summary-display"></div>
+            <div id="total-income">Total Income:</div>
+            <div id="total-expense">Total Expense:</div>
+            <div id="total-budget">Budget:</div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 40px, auto;
+  padding: 20px;
+  background: linear-gradient(to left, rgb(118, 59, 103), rgb(84, 98, 85));
+}
+
+.intro-container {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "Michroma", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #bc8c95;
+}
+
+.income-container,
+.expense-container {
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  border: solid rgb(191, 191, 198) 2px;
+}
+.income-container h3,
+.expense-container h3 {
+  text-align: center;
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.income-container input,
+.expense-container input {
+  display: flex;
+  width: 80%;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.income-container button,
+.expense-container button {
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inex-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.income-expense-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.summary-net-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.summary-container {
+  text-align: center;
+  font-family: "Michroma", sans-serif;
+  font-style: normal;
+}
+.summary-container h3 {
+  text-decoration: underline;
+}
+
+.entry {
+  font-weight: normal;
+  margin-bottom: 8px;
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+.entry.income {
+  color: green;
+}
+.entry.expense {
+  color: red;
+}/*# sourceMappingURL=style.css.map */
